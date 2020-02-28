@@ -4,8 +4,7 @@
 // @version      3.0
 // @description  try to take all mask!
 // @author       Yeahlo
-// @match        *://kz.yq.zszwfw.cn/kzyy-register/
-// @match        *://kz.yq.zszwfw.cn/kzyy-register/?ad_check=1*
+// @match        *://kz.yq.zszwfw.cn/kzyy-register/*
 // @require      http://libs.baidu.com/jquery/2.0.0/jquery.min.js
 // @grant        none
 // ==/UserScript==
@@ -19,7 +18,7 @@
     var clickInterval;
 
     $(function () {
-        $("<div id='maskClickCount' style='display: block;z-index: 9999999;color: #000;position: fixed;'></div>").appendTo('body');
+        $("<div id='maskClickCount' style='display: block;z-index: 9999999;color: #000;position: fixed;top: 10px;'></div>").appendTo('body');
         setTimeout(function () {
             run();
         }, startTimeout);
